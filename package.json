@@ -7,6 +7,11 @@
     "dev": "wrangler dev",
     "start": "wrangler dev",
     "test": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:up": "drizzle-kit up",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate:local": "wrangler d1 migrations apply punchoutprocure",
+    "db:migrate": "wrangler d1 migrations apply punchoutprocure --remote",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
@@ -22,6 +27,7 @@
     "@rgrove/parse-xml": "^4.1.0",
     "drizzle-orm": "^0.33.0",
     "papaparse": "^5.4.1",
+    "resend": "^4.0.0",
     "zod": "^3.23.8"
   }
 }
